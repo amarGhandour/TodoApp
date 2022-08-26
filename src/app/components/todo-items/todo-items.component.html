@@ -1,0 +1,29 @@
+<div class="todo-items-wrapper">
+  <div class="todo-items">
+
+    <ng-container *ngFor="let task of tasks; let i = index;">
+    <div class="todo-item">
+      <div class="check">
+        <div [ngClass]="{'checked': task.checked}" class="check-mark" (click)="toggleCheck(i)">
+          <img src="assets/images/icon-check.svg">
+        </div>
+      </div>
+      <div [ngClass]="{'checked': task.checked}" class="todo-text">
+        {{task.title}}
+      </div>
+      <div class="ms-auto">
+        <button type="button" class="btn-close btn-close-white" aria-label="Close" (click)="deleteTask(i)"></button>
+      </div>
+    </div>
+    </ng-container>
+  </div>
+  <div class="todo-info">
+    <div>{{tasks.length}} items</div>
+    <div class="todo-sort">
+      <div [ngClass]="{'active': activeSort == 'all'}" class="todo-all" (click)="getALLTasks()">All</div>
+      <div [ngClass]="{'active': activeSort == 'completed'}" class="todo-completed" (click)="getCompletedTasks()">Completed</div>
+      <div [ngClass]="{'active': activeSort == 'active'}" class="todo-active" (click)="getActiveTasks()">Active</div>
+    </div>
+    <div class="clear" (click)="clearCompletedTasks()">Clear Completed</div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Complete Javascript course",
+    "checked": true
+  },
+  {
+    "title": "Complete Angular course",
+    "checked": false
+  },
+  {
+    "title": "Complete Laravel course",
+    "checked": false
+  },
+  {
+    "title": "Complete PHP course",
+    "checked": true
+  }
+]

@@ -1,0 +1,19 @@
+div.container {
+  border: 3px solid red;
+  padding: 0 2rem;
+  max-width: 32rem;
+  position: relative;
+  top: -13rem;
+}
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .title {
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1rem;
+}

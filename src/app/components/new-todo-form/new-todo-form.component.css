@@ -1,0 +1,54 @@
+
+.new-todo-item {
+  margin-top: 1.2rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.4rem;
+  background-color: hsl(235, 24%, 19%);
+}
+
+.check {
+  flex-basis: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-mark {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  border: 1px solid hsl(234, 39%, 85%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-todo-input {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.new-todo-input input {
+  width: 100%;
+  margin-left: 15px;
+  padding: 10px 0;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: hsl(234, 39%, 85%);
+}
+
+.new-todo-input input:focus {
+  color: white;
+  outline: 0;
+}
+
+.new-todo-input form {
+  flex-grow: 1;
+  display: flex;
+}

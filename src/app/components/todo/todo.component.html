@@ -1,0 +1,11 @@
+
+<div class="container py-4">
+  <div class="header">
+    <div class="title h1">TODO</div>
+    <div>
+      <img src="assets/images/icon-sun.svg" alt="theme button control">
+    </div>
+  </div>
+  <app-new-todo-form (newTodoAdded)="addNewTodoItem($event)"></app-new-todo-form>
+  <app-todo-items></app-todo-items>
+</div>
